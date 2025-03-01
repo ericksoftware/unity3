@@ -5,34 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
     <script defer src="./scripts/assignment2.js"></script>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        #temperatureDisplay {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/assignment2.css">
+
 </head>
 <body>
-    <h1>Temperature Converter</h1>
-    <p id="temperatureDisplay">Enter a temperature in Celsius, and it will be converted to Fahrenheit.</p>
-    <button onclick="convertTemperature()">Start Conversion</button>
+    <div class="container">
+        <div>
+            <h1>Temperature Converter</h1>
+            <p id="temperatureDisplay">Enter a temperature in Celsius, and it will be converted to Fahrenheit.</p>
+            <button onclick="convertTemperature()">Start Conversion</button>
+        </div>
+        <canvas id="thermometerCanvas" width="100" height="300"></canvas>
+    </div>
+
+
+    <script src="./scripts/assignment2.js"></script>
 </body>
 </html>
