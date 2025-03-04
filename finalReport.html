@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/finalReport.css">
+    <title>Temperature converter</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature converter</h2>
+        <label>Start: <input type="number" id="startValue"></label>
+        <label>End: <input type="number" id="endValue"></label>
+        <label>Scale: 
+            <select id="scale">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+        </label>
+        <br>
+        <button onclick="convertTemperatureRange()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="./scripts/finalReport.js"></script>
+</body>
+</html>

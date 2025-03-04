@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+            text-align: center;
+        }
+        button{
+            padding: 5px ;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        #output{
+            border: 1px;
+            min-height: 100px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Loops example in js</h1>
+
+        <div>
+            <button onclick="startCountdown()">Start Countdown (while loop)</button>
+            <button onclick="passwordPrompt()">Simulate Password (do-while loop)</button>
+            <button onclick="showProducts()">Show Products (for loop)</button>
+        </div>
+
+        <output id="output"></output>
+    </main>
+    
+
+
+    <script src="./scripts/loops.js"></script>
+</body>
+</html>
